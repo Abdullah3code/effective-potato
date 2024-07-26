@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="question" id="question1">
+            <p>What is the capital of France?</p>
+            <input type="text" id="answer1">
+            <button onclick="checkAnswer('answer1', 'Paris', 'question1', 'question2')">Submit</button>
+        </div>
+        <div class="question" id="question2" style="display: none;">
+            <p>What is 2 + 2?</p>
+            <input type="text" id="answer2">
+            <button onclick="checkAnswer('answer2', '4', 'question2', 'question3')">Submit</button>
+        </div>
+        <div class="question" id="question3" style="display: none;">
+            <p>What is the boiling point of water in Celsius?</p>
+            <input type="text" id="answer3">
+            <button onclick="checkAnswer('answer3', '100', 'question3', 'completion')">Submit</button>
+        </div>
+        <div class="question" id="completion" style="display: none;">
+            <p>Congratulations! You've completed the quiz.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
