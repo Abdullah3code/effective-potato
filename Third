@@ -1,0 +1,9 @@
+function checkAnswer(inputId, correctAnswer, currentQuestionId, nextQuestionId) {
+    const userAnswer = document.getElementById(inputId).value.trim();
+    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+        document.getElementById(currentQuestionId).style.display = 'none';
+        document.getElementById(nextQuestionId).style.display = 'block';
+    } else {
+        alert('Incorrect answer. Please try again.');
+    }
+}
